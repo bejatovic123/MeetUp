@@ -8,7 +8,7 @@ export default function EventDashboard() {
   const [events, setEvents] = useState(sampleData);
 
   //function handleCreateEvent(event) {
-  //   setEvents([...events, event]);
+  //   setEvents([...events, sevent]);
   //}
 
   // function handleUpdateEvent(updatedEvent) {
