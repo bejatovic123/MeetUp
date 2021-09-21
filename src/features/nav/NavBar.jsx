@@ -5,7 +5,7 @@ import SignedOutMenu from './SignedOutMenu';
 import SignedInMenu from './SignedInMenu';
 import { useState } from 'react';
 
-export default function NavBar({ setFormOpen }) {
+export default function NavBar() {
   const history = useHistory();
   const [authenticated, setAuthenticated] = useState(false);
 
@@ -21,7 +21,8 @@ export default function NavBar({ setFormOpen }) {
           <img src='/assets/logo.png' alt='logo' style={{ marginRight: 15 }} />
           Re-vents
         </Menu.Item>
-        <Menu.Item as={NavLink} t to='/events' name='Events' />
+        <Menu.Item as={NavLink} to='/events' name='Events' />
+        <Menu.Item as={NavLink} to='/sandbox' name='Sandbox' />
         {authenticated && (
           <Menu.Item as={NavLink} to='/createEvent'>
             <Button positive inverted content='Create Event' />
