@@ -30,3 +30,7 @@ body {
 .fronthome h1.ui.header {
   font-size: 7em;
 }
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
