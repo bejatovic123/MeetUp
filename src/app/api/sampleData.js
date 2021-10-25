@@ -9,17 +9,17 @@ export const sampleData = [
     city: 'NY, USA',
     venue: 'Empire State Building, 5th Avenue, New York, NY, USA',
     hostedBy: ' Marcus',
-    hostPhotoURL: 'https://randomuser.me/api/portraits/men/20.jpg',
+    hostPhotoURL: 'https://randomuser.me/api/portraits/men/26.jpg',
     attendees: [
       {
         id: 'a',
         displayName: ' Marcus',
-        photoURL: 'https://randomuser.me/api/portraits/men/20.jpg',
+        photoURL: 'https://randomuser.me/api/portraits/men/26.jpg',
       },
       {
         id: 'b',
         displayName: ' Karl',
-        photoURL: 'https://randomuser.me/api/portraits/men/22.jpg',
+        photoURL: 'https://randomuser.me/api/portraits/men/19.jpg',
       },
     ],
   },
@@ -33,17 +33,17 @@ export const sampleData = [
     city: 'London, UK',
     venue: 'Punch & Judy, Henrietta Street, London, UK',
     hostedBy: ' Karl',
-    hostPhotoURL: 'https://randomuser.me/api/portraits/men/22.jpg',
+    hostPhotoURL: 'https://randomuser.me/api/portraits/men/19.jpg',
     attendees: [
       {
         id: 'a',
         displayName: ' Marcus',
-        photoURL: 'https://randomuser.me/api/portraits/men/20.jpg',
+        photoURL: 'https://randomuser.me/api/portraits/men/26.jpg',
       },
       {
         id: 'b',
         displayName: ' Karl',
-        photoURL: 'https://randomuser.me/api/portraits/men/22.jpg',
+        photoURL: 'https://randomuser.me/api/portraits/men/19.jpg',
       },
     ],
   },
