@@ -1,7 +1,7 @@
 import React from 'react';
 import { Segment, Item } from 'semantic-ui-react';
 
-export default function EventDetailedSidebar({ attendees }) {
+export default function MeetupDetailedSidebar({ attendees }) {
   return (
     <>
       <Segment

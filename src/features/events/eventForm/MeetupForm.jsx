@@ -13,7 +13,7 @@ import MySelectInput from '../../../app/common/form/MySelectInput';
 import { categoryData } from '../../../app/api/categoryOptions';
 import MyDateInput from '../../../app/common/form/MyDateInput';
 
-export default function EventForm({ match, history }) {
+export default function MeetupForm({ match, history }) {
   const dispatch = useDispatch();
   const selectedEvent = useSelector((state) =>
     state.event.events.find((e) => e.id === match.params.id),
@@ -49,7 +49,7 @@ export default function EventForm({ match, history }) {
                 createEvent({
                   ...values,
                   id: cuid(),
-                  hostedBy: 'Bob',
+                  hostedBy: 'Marcus',
                   attendees: [],
                   hostPhotoURL: '/assets/user.png',
                 }),

@@ -3,7 +3,7 @@ import ModalWrapper from '../../app/common/modals/ModalWrapper';
 
 export default function TestModal({ data }) {
   return (
-    <ModalWrapper size='mini' header='Test Modal'>
+    <ModalWrapper size='mini' header='Capacity data'>
       <div>The data is: {data}</div>
     </ModalWrapper>
   );

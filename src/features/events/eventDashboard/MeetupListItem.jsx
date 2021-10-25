@@ -1,12 +1,12 @@
 import React from 'react';
 import { Segment, Item, Icon, List, Button } from 'semantic-ui-react';
-import EventListAttendee from './EventListAttendee';
+import MeetupListAttendee from './MeetupListAttendee';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { deleteEvent } from '../eventActions';
 import { format } from 'date-fns';
 
-export default function EventListItem({ event }) {
+export default function MeetupListItem({ event }) {
   const dispatch = useDispatch();
 
   return (
@@ -31,7 +31,7 @@ export default function EventListItem({ event }) {
       <Segment secondary>
         <List horizontal>
           {event.attendees.map((attendee) => (
-            <EventListAttendee key={attendee.id} attendee={attendee} />
+            <MeetupListAttendee key={attendee.id} attendee={attendee} />
           ))}
         </List>
       </Segment>

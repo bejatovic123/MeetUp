@@ -17,7 +17,7 @@ export default function SignedOutMenu({ setAuthenticated }) {
         basic
         inverted
         content='Register'
-        style={{ marginLeft: '0.5em' }}
+        style={{ marginLeft: '0.6em' }}
       />
     </Menu.Item>
   );

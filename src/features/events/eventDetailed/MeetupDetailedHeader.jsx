@@ -16,7 +16,7 @@ const eventImageTextStyle = {
   color: 'white',
 };
 
-export default function EventDetailedHeader({ event }) {
+export default function MeetupDetailedHeader({ event }) {
   return (
     <Segment.Group>
       <Segment basic attached='top' style={{ padding: '0' }}>
@@ -47,7 +47,7 @@ export default function EventDetailedHeader({ event }) {
 
       <Segment attached='bottom'>
         <Button>Cancel My Place</Button>
-        <Button color='teal'>JOIN THIS EVENT</Button>
+        <Button color='teal'>JOIN THIS MEET UP</Button>
 
         <Button
           as={Link}

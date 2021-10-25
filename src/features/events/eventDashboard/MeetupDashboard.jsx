@@ -1,21 +1,19 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
 
-import EventList from './EventList';
+import MeetupList from './MeetupList';
 
 import { useSelector } from 'react-redux';
 
-export default function EventDashboard() {
+export default function MeetupDashboard() {
   const { events } = useSelector((state) => state.event);
 
   return (
     <Grid>
       <Grid.Column width={10}>
-        <EventList events={events} />
+        <MeetupList events={events} />
       </Grid.Column>
-      <Grid.Column width={6}>
-        <h2>Event Filters</h2>
-      </Grid.Column>
+      <Grid.Column width={6}></Grid.Column>
     </Grid>
   );
 }

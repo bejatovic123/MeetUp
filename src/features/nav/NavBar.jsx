@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import { Menu, Container, Button } from 'semantic-ui-react';
 import SignedOutMenu from './SignedOutMenu';
 import SignedInMenu from './SignedInMenu';
-
 import { useSelector } from 'react-redux';
 
 export default function NavBar() {
@@ -14,10 +13,10 @@ export default function NavBar() {
       <Container>
         <Menu.Item as={NavLink} exact to='/' header>
           <img src='/assets/logo.png' alt='logo' style={{ marginRight: 15 }} />
-          Re-vents
+          Meet-Up
         </Menu.Item>
         <Menu.Item as={NavLink} to='/events' name='Events' />
-        <Menu.Item as={NavLink} to='/sandbox' name='Sandbox' />
+        <Menu.Item as={NavLink} to='/sandbox' name='Capacity' />
         {authenticated && (
           <Menu.Item as={NavLink} to='/createEvent'>
             <Button positive inverted content='Create Event' />

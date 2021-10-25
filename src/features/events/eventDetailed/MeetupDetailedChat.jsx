@@ -1,7 +1,7 @@
 import React from 'react';
 import { Segment, Button, Form, Comment, Header } from 'semantic-ui-react';
 
-export default function EventDetailedChat() {
+export default function MeetupDetailedChat() {
   return (
     <>
       <Segment
@@ -11,7 +11,7 @@ export default function EventDetailedChat() {
         color='teal'
         style={{ border: 'none' }}
       >
-        <Header>Chat about this event</Header>
+        <Header>Chat about this meet up</Header>
       </Segment>
 
       <Segment attached>
@@ -21,7 +21,7 @@ export default function EventDetailedChat() {
             <Comment.Content>
               <Comment.Author as='a'>Matt</Comment.Author>
               <Comment.Metadata>
-                <div>Today at 5:42PM</div>
+                <div>Today at 6:45PM</div>
               </Comment.Metadata>
               <Comment.Text>How artistic!</Comment.Text>
               <Comment.Actions>
@@ -33,14 +33,12 @@ export default function EventDetailedChat() {
           <Comment>
             <Comment.Avatar src='/assets/user.png' />
             <Comment.Content>
-              <Comment.Author as='a'>Elliot Fu</Comment.Author>
+              <Comment.Author as='a'>Joanne</Comment.Author>
               <Comment.Metadata>
-                <div>Yesterday at 12:30AM</div>
+                <div>Yesterday at 11:40AM</div>
               </Comment.Metadata>
               <Comment.Text>
-                <p>
-                  This has been very useful for my research. Thanks as well!
-                </p>
+                <p>This has been very useful. Thanks as well!</p>
               </Comment.Text>
               <Comment.Actions>
                 <Comment.Action>Reply</Comment.Action>
@@ -50,11 +48,11 @@ export default function EventDetailedChat() {
               <Comment>
                 <Comment.Avatar src='/assets/user.png' />
                 <Comment.Content>
-                  <Comment.Author as='a'>Jenny Hess</Comment.Author>
+                  <Comment.Author as='a'>Jesse </Comment.Author>
                   <Comment.Metadata>
                     <div>Just now</div>
                   </Comment.Metadata>
-                  <Comment.Text>Elliot you are always so right :)</Comment.Text>
+                  <Comment.Text>Joanne you are always so right :)</Comment.Text>
                   <Comment.Actions>
                     <Comment.Action>Reply</Comment.Action>
                   </Comment.Actions>
@@ -70,7 +68,7 @@ export default function EventDetailedChat() {
               <Comment.Metadata>
                 <div>5 days ago</div>
               </Comment.Metadata>
-              <Comment.Text>Dude, this is awesome. Thanks so much</Comment.Text>
+              <Comment.Text>This is awesome. Thanks so much</Comment.Text>
               <Comment.Actions>
                 <Comment.Action>Reply</Comment.Action>
               </Comment.Actions>
