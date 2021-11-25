@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Grid } from 'semantic-ui-react';
-import EventForm from '../eventForm/EventForm';
-import EventList from './EventList';
-import { sampleData } from '../../../app/api/sampleData';
 
-export default function EventDashboard({ formOpen, setFormOpen }) {
-  const [events, setEvents] = useState(sampleData);
+import EventList from './EventList';
+
+import { useSelector } from 'react-redux';
+
+export default function EventDashboard() {
+  const { events } = useSelector((state) => state.event);
 
   return (
     <Grid>
@@ -13,9 +14,7 @@ export default function EventDashboard({ formOpen, setFormOpen }) {
         <EventList events={events} />
       </Grid.Column>
       <Grid.Column width={6}>
-        {formOpen && (
-          <EventForm setFormOpen={setFormOpen} setEvents={setEvents} />
-        )}
+        <h2>Event Filters</h2>
       </Grid.Column>
     </Grid>
   );
